@@ -4,7 +4,7 @@ function Loginbox()
 {
 return(
 
-    <section id="webmiddlecontent"> 
+    <section > 
                 <form action="" method="post" name="loginForm" id="LoginBox">
             
                     <input type="text" placeholder="Username" name="userName" id="username" required minlength="8" maxlength="20"/><br/>  

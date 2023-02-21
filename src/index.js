@@ -9,8 +9,11 @@ root.render(
   <React.StrictMode>
 <>
     <Header/>
-    <Loginbox/>
-    <Cardssection/>
+    
+    <section id="webmiddlecontent"> 
+     <Loginbox/>
+     <Cardssection/>
+    </section>
     
 
 </>
