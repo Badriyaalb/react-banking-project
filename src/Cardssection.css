@@ -1,0 +1,47 @@
+#webmiddlecontent
+{
+    display: flex;
+}
+#webmiddlecontent
+{
+    display: flex;
+}
+.chosecard{
+    font-size: 50px; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align:center ; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+} 
+#Cards 
+{ 
+    display: flex; 
+    
+    justify-content: space-evenly
+}
+.cardimg 
+{
+    max-width: 200px ;
+    margin-right: auto;
+    size: cover;
+
+}
+.cardtitles
+{
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+    color:rgb(167, 124, 15)
+
+
+}
+
+
+.carddiv
+{
+    padding-left: 80px;
+    margin: 20px;
+    padding-bottom: 80px;
+}
+
+
