@@ -10,37 +10,56 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
     /* display them in a single flex(all togather) , justify(arrange the content horizantly); */
 
-#LoginBox
-{
-    background-color:rgba(255, 194, 25, 0.575) ; 
-    border-style: dotted; 
-    border-radius: 8px;  
-    border:rgb(255, 203, 70) ; 
-    text-align:center ; 
-    font-size: 15px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-top: 30px;
-    padding-bottom: 80px;
-}
-#username 
-{
-    border: 2px solid rgb(255, 233, 205);
-        height: 25px;
-        margin-bottom: 20px;
-        margin-left: 15px;
-        margin-right: 15px;
-        border-style: dashed;border-radius: 5px;
-}
-#password
-{
-    border: 3px solid rgb(255, 233, 205);
-    
-    height: 25px;
-    margin-bottom: 20px;
-    margin-left: 15px;
-    margin-right: 15px;
-    border-style: dashed;border-radius: 5px;
-} 
+    #LoginBox
+    {
+        position: relative;
+        width: 300px;
+        height: 500px;
+        border-radius: 20px;
+        padding: 40px;
+        box-sizing: border-box;
+        background: #ecf0f3;
+        box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+      }
+       
+    #username 
+    {
+      background: #ecf0f3;
+      padding: 10px;
+      padding-left: 20px;
+      padding-bottom: 10px;
+      height: 20px;
+      font-size: 14px;
+      border-radius: 50px;
+      box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+      
+    }
+    #password
+    {
+      background: #ecf0f3;
+      padding: 10px;
+      padding-left: 20px;
+      padding-bottom: 10px;
+      height: 20px;
+      font-size: 14px;
+      border-radius: 50px;
+      box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+    }
+    button:hover {
+        box-shadow: none;
+      }
+    #loginButton
+    {
+    color: white;
+      margin-top: 20px;
+      background: #e99f00;
+      height: 40px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: 900;
+      box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+      transition: 0.5s;
+    }
 #userNameError
 {font-size: 12px;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

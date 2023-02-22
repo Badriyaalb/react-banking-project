@@ -16,7 +16,7 @@ return(
                         <p id="passwordErrorLC"></p>
                         <p id="passwordErrorUC"></p>
                         <p id="passwordErrorN"></p>
-                    <input type="submit" value="Log In"/><br/> 
+                    <input id="loginButton" type="submit" value="Log In"/><br/> 
                     
                     <a href="https://digital.mashreqbank.com/onlinebanking/">Forgot Password </a><br/> 
                     <a href="http://127.0.0.1:5507/Pages/signup.HTML">Sign Up </a><br/> 
