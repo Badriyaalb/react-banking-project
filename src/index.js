@@ -23,14 +23,12 @@ root.render(
               <div id="Cards">
                 <div className="carddiv">
                   <Cardssection imageName={SOLITAIRE} cardContent="Solitaire" />
-                  <Cardssection imageName="" cardContent="" />
-                  <Cardssection imageName="" cardContent="" />
-                  <Cardssection imageName="" cardContent="" />
-
-
-              
+                  <Cardssection imageName={PlatinumElite} cardContent="Platinum Elite" />
+                  <Cardssection imageName={NoonVip} cardContent="Noon Vip" />
+                  <Cardssection imageName={CashBack} cardContent="Cash Back" />
                 </div>
-              </div> 
+              </div>
+               
             </div>
      </section>
     </section>

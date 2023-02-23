@@ -1,6 +1,8 @@
+import './Header.css';
+
 function Header(){
 return(<div>
-    <img src="https://www.mashreqbank.com/kuwait/en/images/logo_tcm75-217770.png" alt=" Mashreq Bank logo" id = "BankLogo"/>
+    <img src="https://www.mashreqbank.com/kuwait/en/images/logo_tcm75-217770.png" alt=" Mashreq Bank logo" id="BankLogo"/>
             <nav id="menu">
                
                 <a href="https://www.mashreqbank.com/en/uae/gold/"  id = "Gold">GOLD </a>
@@ -12,7 +14,5 @@ return(<div>
                 
             </nav>
     </div>);
-
-
 }
 export default Header;
