@@ -7,6 +7,7 @@ import PlatinumElite from './image/Platinum Elite.PNG';
 import SOLITAIRE from './image/SOLITAIRE.PNG';
 import NoonVip from './image/Noon VIP.PNG';
 import CashBack from './image/Cash Back.PNG';
+import './Cardssection.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,20 +17,18 @@ root.render(
     
     <section id="webmiddlecontent"> 
      <Loginbox/>
-     <Cardssection/>
      <section>
-          <div>
-              <h1 className="chosecard"> Apply For Your Prefered Card </h1>
+      <h1 className="chosecard"> Apply For Your Prefered Card </h1>
+          
+              
               <div id="Cards">
-                <div className="carddiv">
-                  <Cardssection imageName={SOLITAIRE} cardContent="Solitaire" />
-                  <Cardssection imageName={PlatinumElite} cardContent="Platinum Elite" />
-                  <Cardssection imageName={NoonVip} cardContent="Noon Vip" />
-                  <Cardssection imageName={CashBack} cardContent="Cash Back" />
-                </div>
+                  <Cardssection imageName={SOLITAIRE} cardtitle="Solitaire" />
+                  <Cardssection imageName={PlatinumElite} cardtitle="Platinum Elite" />
+                  <Cardssection imageName={NoonVip} cardtitle="Noon Vip" />
+                  <Cardssection imageName={CashBack} cardtitle="Cash Back" />
               </div>
                
-            </div>
+            
      </section>
     </section>
     
