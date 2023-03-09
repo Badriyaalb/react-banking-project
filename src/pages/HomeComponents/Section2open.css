@@ -1,0 +1,46 @@
+.aboutp2Body {
+    font-size: 15px;
+    color: black;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-style: oblique;
+    font-style: normal;
+    padding: 10px;
+  }
+  
+  .heading123 {
+    font-size: 30px;
+    color: rgb(255, 152, 18);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, Times, serif;
+    font-style: normal;
+  }
+  #Body23 {
+    display: flex;
+  }
+  
+  #openacountimage123 {
+    margin-left: 300px;
+  }
+  #block {
+    background-color: rgba(240, 248, 255, 0.863);
+    border-radius: 5%;
+    padding: 20px;
+    width: 50%;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+  #workTogather {
+    background-image: url("../../image/background2.jpg");
+    background-size: cover;
+    border-style: groove;
+    border-radius: 4px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    border-color: aliceblue;
+    border-width: 10px;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  #openAccount {
+    padding: 30px;
+  }
