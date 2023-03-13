@@ -1,0 +1,103 @@
+#Dashboard  {
+    padding-bottom: 90px;
+
+    padding-left:30px;display: flex;
+}  
+
+#Cardpicture
+{background-image: url("../image/Emptycreditcard.gif");}
+
+#rightcontentdash
+{
+display: grid;
+}
+#carddetails
+{
+    display: flex;
+    margin-left: 50px;
+    margin-top: 60px;
+}
+
+#Firstandlastname
+{
+    color:blanchedalmond;
+    position: relative;
+    bottom: 200px;
+    left:20px;
+    font-size: 18px;
+}
+#Firstname{
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    height: 20px;
+    font-size: 14px;
+    border-radius: 20px;
+    margin-bottom:10px;
+    box-shadow: inset 6px 6px 6px #cbced162, inset -6px -6px 6px white;
+}
+#applybtn{
+    margin-left: 50px;
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    height: 40px;
+    width:100px;
+    font-size: 14px;
+    border-radius: 20px;
+    margin-bottom:10px;
+    box-shadow: inset 6px 6px 6px #cbced162, inset -6px -6px 6px white;
+}
+#Lastname{
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    height: 20px;
+    font-size: 14px;
+    margin-bottom:10px;
+    border-radius: 20px;
+    box-shadow: inset 6px 6px 6px #cbced162, inset -6px -6px 6px white;
+}
+#Buttonmenu
+{
+padding-top: 30px;
+padding-right: 30px;
+border-right: 1px solid #ffae005b;
+
+}
+.menubuttons:hover {
+    box-shadow: none;
+  }
+.menubuttons {
+    color: white;
+    margin-top: 20px;
+    background: #ffae00;
+    padding: 20px;
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Segoe UI', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    transition: 0.5s;
+  }
+  #Logoutbutton{
+    color: white;
+    margin-top: 60px;
+    background: #ffae00;
+    padding: 10px;
+    height: 80px;
+    width: 170px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Segoe UI', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    transition: 0.5s;
+  }

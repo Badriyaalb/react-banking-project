@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Cardssection from './HomeComponents/Cardssection';
 import Header from './HomeComponents/Header';
-import Loginbox from './HomeComponents/Loginbox';
 import PlatinumElite from './../image/Platinum Elite.PNG';
 import SOLITAIRE from './../image/SOLITAIRE.PNG';
 import NoonVip from './../image/Noon VIP.PNG';
@@ -12,6 +11,8 @@ import Openaccount from './HomeComponents/Openaccount';
 import Footer from './HomeComponents/Footer';
 import cardImage from './../image/background1.png';
 import Section2open from './HomeComponents/Section2open';
+import ValidatePassword from './HomeComponents/ValidatePassword';
+
 
 
 function Home(){
@@ -21,7 +22,7 @@ function Home(){
 <Header/>
 
 <section id="webmiddlecontent"> 
- <Loginbox/>
+ <ValidatePassword/>
  <section>
   <h1 className="chosecard"> Apply For Your Prefered Card </h1>
       
