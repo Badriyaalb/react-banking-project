@@ -14,7 +14,6 @@ function Dashboard(){
 <div id="rightcontentdash">
     <Carddetails/>
     <Convert/>
-    
 </div>
 </section>
 <Footer/>

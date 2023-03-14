@@ -1,11 +1,11 @@
 #Dashboard  {
     padding-bottom: 90px;
-
+    justify-content: space-evenly;
     padding-left:30px;display: flex;
 }  
-
-#Cardpicture
-{background-image: url("../image/Emptycreditcard.gif");}
+#cardimg{
+    margin-right: 20px;
+}
 
 #rightcontentdash
 {
@@ -48,11 +48,13 @@ display: grid;
     font-size: 14px;
     border-radius: 20px;
     margin-bottom:10px;
+    margin-top: 25px;
     box-shadow: inset 6px 6px 6px #cbced162, inset -6px -6px 6px white;
 }
 #Lastname{
     background: #ecf0f3;
     padding: 10px;
+    margin-top: 25px;
     padding-left: 20px;
     padding-bottom: 10px;
     height: 20px;
@@ -101,3 +103,74 @@ border-right: 1px solid #ffae005b;
     box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
     transition: 0.5s;
   }
+
+#amount1
+  {
+    margin-left: 50px;
+    margin-top: 10px;
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    height: 20px;
+    font-size: 14px;
+    margin-bottom:10px;
+    border-radius: 20px;
+    box-shadow: inset 6px 6px 6px #cbced162, inset -6px -6px 6px white;
+}
+#amount2
+  {
+    margin-left: 50px;
+    margin-top: 30px;
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    height: 20px;
+    font-size: 14px;
+    margin-bottom:10px;
+    border-radius: 20px;
+    box-shadow: inset 6px 6px 6px #cbced162, inset -6px -6px 6px white;
+}
+
+#Currency1
+  {
+    background: #ecf0f3;
+    padding: 10px;
+    margin-top: 25px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    height: 20px;
+    font-size: 14px;
+    margin-bottom:10px;
+    border-radius: 20px;
+    box-shadow: inset 6px 6px 6px #cbced162, inset -6px -6px 6px white;
+}
+#Convbtn
+{
+    margin-left: 100px;
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    height: 40px;
+    width:100px;
+    font-size: 14px;
+    border-radius: 20px;
+    margin-bottom:10px;
+    margin-top: 25px;
+    box-shadow: inset 6px 6px 6px #cbced162, inset -6px -6px 6px white; 
+}
+#Currency2
+  {
+    background: #ecf0f3;
+    padding: 10px;
+    margin-top: 25px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    height: 20px;
+    font-size: 14px;
+    margin-bottom:10px;
+    border-radius: 20px;
+    box-shadow: inset 6px 6px 6px #cbced162, inset -6px -6px 6px white;
+}

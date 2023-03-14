@@ -11,7 +11,7 @@ import Openaccount from './HomeComponents/Openaccount';
 import Footer from './HomeComponents/Footer';
 import cardImage from './../image/background1.png';
 import Section2open from './HomeComponents/Section2open';
-import ValidatePassword from './HomeComponents/ValidatePassword';
+import Loginform from './HomeComponents/ValidatePassword';
 
 
 
@@ -22,7 +22,7 @@ function Home(){
 <Header/>
 
 <section id="webmiddlecontent"> 
- <ValidatePassword/>
+ <Loginform/>
  <section>
   <h1 className="chosecard"> Apply For Your Prefered Card </h1>
       
