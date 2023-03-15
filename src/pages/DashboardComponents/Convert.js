@@ -1,6 +1,8 @@
 function Convert(){
     return(
+        <div className="dashsectioncolor">
     <section id="currencyamount">
+        <h1 className="sectionhead">Currency Conversion</h1>
         <div>
         <input id="amount1" type="number" 
         placeholder="Amount" name="Amount1" required minlength="1"/>
@@ -20,6 +22,7 @@ function Convert(){
         <button id="Convbtn" onclick="myFunction()">Convert</button><br/>
         </div>
     </section>
+    </div>
     );
 }
 export default Convert;

@@ -7,17 +7,17 @@ import Convert from "./DashboardComponents/Convert";
 
 function Dashboard(){
     return(
-        <>
+        <div id="Dashboard1">
 <Header/>
 <section id="Dashboard">
-<Buttonmenu/>  
+<div><Buttonmenu/>  </div>
 <div id="rightcontentdash">
     <Carddetails/>
     <Convert/>
 </div>
 </section>
 <Footer/>
-</>
+</div>
     );
 }
 

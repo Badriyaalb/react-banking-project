@@ -16,8 +16,10 @@ class Carddetails extends React.Component{
     }
     render(){
         return(
+            <div className="dashsectioncolor">
+            <h1 className="sectionhead">  Apply for a card </h1><br/>
             <section id="carddetails">
- 
+                
                 <div id="firstlast">
                      <input id="Firstname" type="text" size="20"  placeholder="First Name" name="Firstname"required 
                      onChange={this.changeFirstName}/>
@@ -36,6 +38,8 @@ class Carddetails extends React.Component{
                  <h2 id="Firstandlastname">"{this.state.FirstName}{this.state.LastName}"</h2>
                 </div>
             </section>
+            </div>
+
     );
         
     }

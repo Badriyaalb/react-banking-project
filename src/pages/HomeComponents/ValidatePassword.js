@@ -63,19 +63,19 @@ class Loginform extends React.Component{
                 if(!userPassword.match(lowerCaseCheck))
                 {
                     this.setState({
-                    passwordError:"lowercase required"
+                        passwordErrorLC:"lowercase required"
                     })
                 }
                 if(!userPassword.match(upperCaseCheck))
                 {
                     this.setState({
-                    passwordError:"upperrcase required"
+                        passwordErrorUC:"upperrcase required"
                     })
                 }
                 if(!userPassword.match(numberCheck))
                 {
                     this.setState({
-                    passwordError:"number required"
+                        passwordErrorN:"number required"
                     })
                 }
     }
@@ -95,9 +95,10 @@ class Loginform extends React.Component{
                     
                     <input type="checkbox"/> Save Password/<br/> 
                    
-                        <p id="passwordErrorLC">{this.state.passwordError}</p>
-                        <p id="passwordErrorUC">{this.state.passwordError}</p>
-                        <p id="passwordErrorN">{this.state.passwordError}</p>
+                        <p id="passwordErrorLC">{this.state.passwordErrorLC}</p>
+                        <p id="passwordErrorUC">{this.state.passwordErrorUC}</p>
+                        <p id="passwordErrorN">{this.state.passwordErrorN}</p>
+                        <p id="accountMessage">{this.state.accountMessage}</p>
                         <input id="loginButton" type="submit"/><br/> 
                     
                     <a href="https://digital.mashreqbank.com/onlinebanking/">Forgot Password </a><br/> 
