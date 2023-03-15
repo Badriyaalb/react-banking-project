@@ -1,16 +1,67 @@
 import './Signup.css'
-function Signup(){
-return(
+import axios from "axios";
+import React from "react";
+    
+class Signup extends React.Component{
+
+    state={
+        accounttype:'',
+        currencytype:'',
+        firstName:'',
+        lastName:'',
+        phonenumber:'',
+        dateofbirth:'',
+        street:'',
+        country:'',
+        city:'',
+        state:'',
+        maritualstatus:'',
+        usercreationmsg:'',
+      }
+    
+      storeUserData = (e)=>{
+        e.preventDefault();
+    
+        let newUser = {
+          firstName:this.state.firstName,
+          lastName:this.state.lastName,
+          phonenumber:this.state.phonenumber,
+          dateofbirth:this.state.dateofbirth,
+          street:this.state.street,
+          city:this.state.city,
+          state:this.state.state,
+          
+        }
+    
+        axios.post('https://crudcrud.com/api/a6d087ea01ba4b9682e19885fa018749/users', {newUser})
+        .then(
+            res=>{
+              console.log(res);
+                console.log(res.data);
+                this.setState({usercreationmsg: "User Has Been Created"})
+            }    
+        );
+        }
+
+          
+      
+        
+render()
+{
+    return(
 <>
-    <form action="#" method="POST" name="loginForm" onsubmit="return validateForm()">
+    <form action="#" method="POST" name="loginForm" onSubmit={this.storeUserData}>
         <div id="body1">
     <h1>Bank Account registeration Form</h1>
     <hr/>
     <section id="accountinfo">
         <h2 id="sectionhead">Account Information</h2><br/>
-         <div class="contentbox">
+         <div className="contentbox">
          <h3> Account Type</h3>
-         <select name="accounttype" id="accounttype">
+         <select name="accounttype" id="accounttype" required
+          onChange={(e)=>{
+            this.setState({accounttype:e.target.value})
+          }}>
             <option selected disabled value="selecttype"> Select account type</option>
             <option value="salariedaccount"> Salaried Account</option>
             <option value="savingaccount"> Saving Account</option>
@@ -18,7 +69,10 @@ return(
             <option value="calldepositaccount"> Call Deposit Account</option>
          </select>
          <h3> Currency Type</h3>
-         <select name="currencytype" id="currencytype" >
+         <select name="currencytype" id="currencytype" required
+          onChange={(e)=>{
+            this.setState({currencytype:e.target.value})
+          }}>
             <option selected disabled value="currency"> Select Currency</option>
             <option value="AED"> AED</option>
             <option value="USD"> USD</option>
@@ -35,24 +89,45 @@ return(
             The information given in this section is considered as the information of the primary account owner information.
          </p>
        
-         <div class="contentbox">
+         <div className="contentbox">
             
     
         <h3 id="boldtitles">Name</h3>
         <input type="text" name="first" placeholder="First Name" 
-        required /><input type="text" name="Last" placeholder="Last Name" required />
+        required
+        onChange={(e)=>{
+            this.setState({firstName:e.target.value})
+          }} />
+        <input type="text" name="Last" placeholder="Last Name" required 
+        onChange={(e)=>{
+            this.setState({lastName:e.target.value})
+          }}
+        />
         <h3 id="boldtitles">Phone Number</h3>
-        <input type="tel" name="first" placeholder="First Name" required/>
+        <input type="tel" name="phonenumber" placeholder="Phone Number" required
+         onChange={(e)=>{
+            this.setState({phonenumber:e.target.value})
+          }}/>
         <h3 id="boldtitles">Date of Birth</h3>
-        <input type="date" name="Date" required/>
+        <input type="date" name="Date" required
+        onChange={(e)=>{
+            this.setState({dateofbirth:e.target.value})
+          }}/>
         <p id="userPasswordError"></p>
-        
-    
-
-       
        <h3 id="boldtitles">Resdidental Address</h3>
-       <input type="text" name="Street" placeholder="Street - optional"/> <input type="text" name="City" placeholder="City" required/> <br/>
-            <select name="Country" id="Country" placeholder="" required>
+       <input type="text" name="Street" placeholder="Street - optional"
+       onChange={(e)=>{
+        this.setState({street:e.target.value})
+      }}/> 
+       <input type="text" name="City" placeholder="City" required
+       onChange={(e)=>{
+        this.setState({city:e.target.value})
+      }}/> 
+      <br/>
+            <select name="Country" id="Country" placeholder="" required
+             onChange={(e)=>{
+                this.setState({country:e.target.value})
+              }}>
                 <option selected disabled value="Country"> Select Country</option>
                 <option value="UAE"> United Arab Emirates</option>
                 <option value="USA"> United States</option>
@@ -63,9 +138,16 @@ return(
                 <option value="UK"> United Kingdom</option>
                 <option value="FRA"> France</option>
             </select>  
-     <input type="text" name="State" placeholder="State" required minlength="4"/> 
+     <input type="text" name="State" placeholder="State" required minlength="4"
+      
+      onChange={(e)=>{
+        this.setState({state:e.target.value})
+      }}
+        /> 
        <h3 id="boldtitles">Maritual Status</h3>
-            <select name="Gender" id="Gender">
+            <select name="Gender" id="Gender" onChange={(e)=>{
+            this.setState({maritualstatus:e.target.value})
+          }}>
                 <option value="Male"> Male</option>
                 <option value="Female"> Female</option>
             </select>
@@ -75,9 +157,9 @@ return(
        <p><input type="checkbox" required/>Agree to the terms and conditions </p><br/>
         <input type="submit" value="submit"/>
    
-   
+          <p id="creationmsg"> {this.state.usercreationmsg}</p>
      
-                </div> 
+      </div> 
              
          
     </section>
@@ -85,6 +167,6 @@ return(
 </form>
 </>
 );
-}
+}}
 
 export default Signup;

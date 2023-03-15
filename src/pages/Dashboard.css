@@ -19,7 +19,9 @@ border-right: 2px solid rgba(12, 14, 14, 0.473) ;
 border-bottom: 2px solid rgba(12, 14, 14, 0.473) ;
 
 }
-
+#creationmsg
+{font-size: 20px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
 #cardimg{
  margin-right: 20px;
 }
