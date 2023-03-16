@@ -1,6 +1,8 @@
 import './Signup.css'
 import axios from "axios";
 import React from "react";
+import Footer from './HomeComponents/Footer';
+import Header from './HomeComponents/Header';
     
 class Signup extends React.Component{
 
@@ -49,7 +51,11 @@ class Signup extends React.Component{
 render()
 {
     return(
-<>
+<div>
+  <Header/>
+
+<div id="content">
+    
     <form action="#" method="POST" name="loginForm" onSubmit={this.storeUserData}>
         <div id="body1">
     <h1>Bank Account registeration Form</h1>
@@ -58,7 +64,7 @@ render()
         <h2 id="sectionhead">Account Information</h2><br/>
          <div className="contentbox">
          <h3> Account Type</h3>
-         <select name="accounttype" id="accounttype" required
+         <select className="selectbuttons" name="accounttype" id="accounttype" required
           onChange={(e)=>{
             this.setState({accounttype:e.target.value})
           }}>
@@ -69,7 +75,7 @@ render()
             <option value="calldepositaccount"> Call Deposit Account</option>
          </select>
          <h3> Currency Type</h3>
-         <select name="currencytype" id="currencytype" required
+         <select className="selectbuttons" name="currencytype" id="currencytype" required
           onChange={(e)=>{
             this.setState({currencytype:e.target.value})
           }}>
@@ -84,7 +90,7 @@ render()
      
     <hr/>
     <section id="personalinfo">
-        <h2 id="sectionhead">Personal Information</h2>
+        <h2 className="titleshead" id="sectionhead">Personal Information</h2>
          <p id="personaldescription">
             The information given in this section is considered as the information of the primary account owner information.
          </p>
@@ -92,39 +98,39 @@ render()
          <div className="contentbox">
             
     
-        <h3 id="boldtitles">Name</h3>
-        <input type="text" name="first" placeholder="First Name" 
+        <h3 className="titleshead" id="boldtitles">Name</h3>
+        <input className="inputbuttons" type="text" name="first" placeholder="First Name" 
         required
         onChange={(e)=>{
             this.setState({firstName:e.target.value})
           }} />
-        <input type="text" name="Last" placeholder="Last Name" required 
+        <input className="inputbuttons" type="text" name="Last" placeholder="Last Name" required 
         onChange={(e)=>{
             this.setState({lastName:e.target.value})
           }}
         />
-        <h3 id="boldtitles">Phone Number</h3>
-        <input type="tel" name="phonenumber" placeholder="Phone Number" required
+        <h3 className="titleshead" id="boldtitles">Phone Number</h3>
+        <input className="inputbuttons" type="tel" name="phonenumber" placeholder="Phone Number" required
          onChange={(e)=>{
             this.setState({phonenumber:e.target.value})
           }}/>
-        <h3 id="boldtitles">Date of Birth</h3>
-        <input type="date" name="Date" required
+        <h3  className="titleshead" id="boldtitles">Date of Birth</h3>
+        <input className="inputbuttons" type="date" name="Date" required
         onChange={(e)=>{
             this.setState({dateofbirth:e.target.value})
           }}/>
         <p id="userPasswordError"></p>
-       <h3 id="boldtitles">Resdidental Address</h3>
-       <input type="text" name="Street" placeholder="Street - optional"
+       <h3  className="titleshead" id="boldtitles">Resdidental Address</h3>
+       <input className="inputbuttons" type="text" name="Street" placeholder="Street - optional"
        onChange={(e)=>{
         this.setState({street:e.target.value})
       }}/> 
-       <input type="text" name="City" placeholder="City" required
+       <input  className="inputbuttons" type="text" name="City" placeholder="City" required
        onChange={(e)=>{
         this.setState({city:e.target.value})
       }}/> 
       <br/>
-            <select name="Country" id="Country" placeholder="" required
+            <select className="selectbuttons" name="Country" id="Country" placeholder="" required
              onChange={(e)=>{
                 this.setState({country:e.target.value})
               }}>
@@ -138,14 +144,14 @@ render()
                 <option value="UK"> United Kingdom</option>
                 <option value="FRA"> France</option>
             </select>  
-     <input type="text" name="State" placeholder="State" required minlength="4"
+     <input  className="inputbuttons" type="text" name="State" placeholder="State" required minlength="4"
       
       onChange={(e)=>{
         this.setState({state:e.target.value})
       }}
         /> 
-       <h3 id="boldtitles">Maritual Status</h3>
-            <select name="Gender" id="Gender" onChange={(e)=>{
+       <h3 className="titleshead" id="boldtitles">Maritual Status</h3>
+            <select className="selectbuttons" name="Gender" id="Gender" onChange={(e)=>{
             this.setState({maritualstatus:e.target.value})
           }}>
                 <option value="Male"> Male</option>
@@ -154,7 +160,7 @@ render()
        
        <br/>
        
-       <p><input type="checkbox" required/>Agree to the terms and conditions </p><br/>
+       <p><input  type="checkbox" required/>Agree to the terms and conditions </p><br/>
         <input type="submit" value="submit"/>
    
           <p id="creationmsg"> {this.state.usercreationmsg}</p>
@@ -165,7 +171,10 @@ render()
     </section>
     </div>
 </form>
-</>
+
+</div>
+<Footer/>
+</div>
 );
 }}
 

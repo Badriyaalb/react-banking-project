@@ -37,6 +37,7 @@ class Carddetails extends React.Component{
                  <img id="cardimg"src={EmptyCard}/>
                  <h2 id="Firstandlastname">"{this.state.FirstName}{this.state.LastName}"</h2>
                 </div>
+                
             </section>
             </div>
 

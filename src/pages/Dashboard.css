@@ -4,6 +4,9 @@
     padding-left:30px;display: flex;
 }  
 
+hr{
+  margin-top:80px;
+}
 .sectionhead
 {background-color: #ffae008a;
 font-size: 25px;
@@ -181,11 +184,13 @@ background-color:#ffae0085;
     padding: 10px;
     margin-top: 25px;
     padding-left: 20px;
+    margin-left: 70px;
     padding-bottom: 10px;
-    height: 20px;
+    height: 40px;
     font-size: 14px;
     margin-bottom:10px;
     border-radius: 20px;
+   
     box-shadow: inset 6px 6px 6px #cbced162, inset -6px -6px 6px white;
 }
 #Convbtn:hover{
@@ -219,4 +224,21 @@ background-color:#ffae0085;
     margin-bottom:10px;
     border-radius: 20px;
     box-shadow: inset 6px 6px 6px #cbced162, inset -6px -6px 6px white;
+}
+#currencyflex{
+  display: flex;
+  justify-content: space-around;
+}
+#convertrslt
+{
+height: 200px;
+width: 400px;
+padding-right: 30px;
+margin: 60px;
+/* padding:20px; */
+font-size: 30px;;
+}
+#imgmoney{
+  width: 30%;
+  padding-left: 150px
 }
